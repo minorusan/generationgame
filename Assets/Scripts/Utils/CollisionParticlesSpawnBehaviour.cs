@@ -19,6 +19,8 @@ namespace Utils
         private void OnCollisionEnter2D(Collision2D col)
         {
             var parts = PoolManager.Instance.ReuseObject(collisionParticles, col.contacts[0].point, Quaternion.identity);
+            parts.transform.localScale = Vector3.one;
+
             parts.transform.localScale *= _body2D.velocity.magnitude * particleScaleMultiplier;
             parts.transform.LookAt((Vector2)gameObject.transform.position);
         }
