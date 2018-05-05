@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables: []
+    intVariables: []
+    boolVariables: []
+    stringVariables: []
+    vector2Variables: []
+    vector3Variables: []
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: GameSession/Camera
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: GameSession/Exit
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: GameSession/Player
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    objectVariables: []
+    materialVariables: []
+    textureVariables: []
+    arrayVariables: []
+    enumVariables: []
+    categories:
+    - 
+    variableCategoryIDs: 000000000000000000000000
+  events:
+  - GAMEPLAY/GAME_STARTED
+  - UI/SHOW_GAME_STARTED_UI
+  - UI/SHOW_REGULAR_UI
+  - UI/ANIMATION_FINISHED
+  - UI/START_ANIMATION_FINISHED
+  - UI/GOAL_REACHED_UI_FINISHED
+  - GAMEPLAY/EXIT_REACHED
+  - GAMEPLAY/GAME_SESSION_ENDED
