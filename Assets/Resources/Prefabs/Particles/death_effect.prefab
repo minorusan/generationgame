@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 199288497426108490}
   - component: {fileID: 82022615611828662}
   m_Layer: 0
-  m_Name: exit_reached_effect
+  m_Name: death_effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 80aa3ba0bbd16444eb03f1aa1f5065d1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 66a0263e0ee5a4080b53bfa7e8bf6bb3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.55
   m_Pitch: 1
@@ -146,7 +146,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 1
   simulationSpeed: 1
-  stopAction: 2
+  stopAction: 1
   looping: 0
   prewarm: 0
   playOnAwake: 1
@@ -323,7 +323,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.0990566, g: 1, b: 0.11570631, a: 1}
+      maxColor: {r: 0.7735849, g: 0.19102561, b: 0.025542913, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

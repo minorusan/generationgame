@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ namespace GamePlay
 {
     public class CreateForceOnInput : MonoBehaviour
     {
+        public static event Action released;
+
         private LineRenderer _renderer;
         private bool _getsForce;
         private Rigidbody2D _player;
@@ -52,6 +55,10 @@ namespace GamePlay
                 var direction = _renderer.GetPosition(0) - _renderer.GetPosition(1);
                 _player.AddForce(direction.normalized * (distance * forceMultiplier), ForceMode2D.Impulse);
                 _renderer.enabled = false;
+                if (released != null)
+                {
+                    released();
+                }
             }
         }
 
